@@ -1,0 +1,31 @@
+.auth__background{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(51, 1, 63, 0.507), rgba(8, 0, 36, 0.459)), url(../../img/citynn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.auth__container{
+    z-index: 1;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-weight: 600;
+        font-style: italic;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
