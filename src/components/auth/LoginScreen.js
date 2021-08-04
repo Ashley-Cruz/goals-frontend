@@ -8,6 +8,7 @@ export const LoginScreen = () => {
     const dispatch = useDispatch();
     
     const responseGoogle = async({tokenId}) => {
+        
         const data = {tokenId}
         
         dispatch(startLogin(data));

@@ -1,4 +1,8 @@
-const baseUrl = process.env.REACT_APP_API_URL
+// const baseUrl = (window.location.hostname.includes('localhost'))
+//                 ? 'http://localhost:8080/api'
+//                 : 'https://goalsapp-backend.herokuapp.com/api'
+
+const baseUrl = 'https://goalsapp-backend.herokuapp.com/api'
 
 const fetchSinToken = (endpoint, data, method = 'GET') => {
     const url = `${baseUrl}/${endpoint}`;
