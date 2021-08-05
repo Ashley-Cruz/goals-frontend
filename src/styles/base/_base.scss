@@ -59,9 +59,9 @@ h1, h2{
     
     .base__body-content{
         height: 90%;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {display: none;}
-        margin: 10px 0px 25px 0px;
+        // overflow-y: scroll;
+        // &::-webkit-scrollbar {display: none;}
+        // margin: 10px 0px 25px 0px;
         // background-color: yellow;
     }
 }
