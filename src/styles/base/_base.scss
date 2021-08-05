@@ -14,7 +14,7 @@ h1, h2{
 
 .base__wrapper{
     width: 100%;
-    height: 93vh;
+    height: 88vh;
     flex-wrap: nowrap;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@ h1, h2{
     .base__wrapper-content-1{
         height: 100%;
         width: 100%;
+        display: flex;
     }
 
     .base__wrapper-content-2{
