@@ -9,8 +9,12 @@ import {
     Redirect,
     Link
 } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { goalClearActive } from './../actions/goal';
 
 export const GoalsRouter = () => {
+
+    const dispatch = useDispatch();
 
     return (
         <div className="base__wrapper">
@@ -26,7 +30,7 @@ export const GoalsRouter = () => {
             </div>
             <div className="base__wrapper-content-2">
                 <Link to="/categories"><i className="fas fa-home"></i></Link>
-                <Link to="/goal"><i className="fas fa-plus"></i></Link>
+                <Link to="/goal" onClick={() => dispatch(goalClearActive())} ><i className="fas fa-plus"></i></Link>
                 <Link to="/statistics"><i className="fas fa-signal"></i></Link>
             </div>
         </div>
