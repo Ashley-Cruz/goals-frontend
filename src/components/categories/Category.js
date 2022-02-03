@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { categoryActive } from './../../actions/category';
+import { goalClearActive } from './../../actions/goal';
 
 export const Category = () => {
 
@@ -9,7 +10,7 @@ export const Category = () => {
     const {categories} = useSelector(state => state.category);
 
     const handleClick = (id) => {
-        categories.map( category => (category.id === id) && dispatch(categoryActive(category)));
+        categories.map( category => (category.id === id) && dispatch(categoryActive(category)), dispatch(goalClearActive()));
     }
 
     return (
